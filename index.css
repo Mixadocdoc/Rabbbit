@@ -18,8 +18,8 @@
 .cell {
   width: 50px;
   height: 50px;
-  border: 1px solid rgb(145, 201, 81);
-  background: rgb(235, 240, 174);
+  border: 1px solid rgb(233, 146, 112);
+  background: rgb(245, 212, 193);
 }
 
 .wolf,
@@ -28,7 +28,7 @@
 .barrier {
   display: flex;
   position: absolute;
-  background: rgb(170, 223, 90);
+  background: rgb(245, 212, 193);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
