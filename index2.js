@@ -65,25 +65,12 @@ function startGame() {
       );
 
       if (rabbitPosition) {
-        const wolfsPositions = getWolfsPositions(charactersPositions);
-
         charactersPositions[RABBIT] = rabbitPosition;
         rabbitNode.style.top = rabbitPosition.top + "px";
         rabbitNode.style.left = rabbitPosition.left + "px";
       }
     }
   });
-}
-
-function getWolfsPositions(charactersPositions) {
-  const wolfsPositions = {};
-  Object.keys(charactersPositions).forEach(character => {
-    if (character.replace(/[0-9]/g, "") === WOLF) {
-      wolfsPositions[character] = charactersPositions[character];
-    }
-  });
-
-  return wolfsPositions;
 }
 
 function changeRabbitPosition(rabbitPosition, barrierPositions, direction) {
